@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: "Poetsen One", sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, #0051ff, #3d3ba5c9, #ac96ce);
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  align-items: center;
+  font-weight: 500;
+  position: sticky;
+  z-index: 1;
+}
+/*vav-linksに余白をつけて左寄せ justify-content: ;と同じ*/
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+/*nav-linksの点を削除*/
+.nav-links li {
+  list-style: none;
+}
+/*ロゴを横ならびにして上下の中央ぞろえ*/
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 20%;
+  margin-right: 15px;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.nav-links ul a {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links ul a:hover {
+  color: #ffa600;
+}
+
+.infomation {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 1000px;
+  height: 1000px;
+  /*background: #f7b742;*/
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature {
+  display: flex;
+  position: absolute;
+  color: #ffffff;
+}
+
+.feature img {
+  width: 70px;
+}
+
+.feature div {
+  margin-left: 20px;
+}
+
+.feature div p {
+  margin-top: 2px;
+}
+
+.one {
+  top: 450px;
+  right: 70px;
+}
+
+.two {
+  transform: rotate(-90deg);
+  top: 100px;
+  right: 340px;
+}
+
+.three {
+  transform: rotate(-180deg);
+  bottom: 450px;
+  left: 50px;
+}
+
+.four {
+  transform: rotate(-270deg);
+  bottom: 150px;
+  right: 370px;
+}
+
+.pc {
+  z-index: 1;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 27%;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15%;
+  text-align: center;
+}
+
+#upBtn {
+  width: 70px;
+  cursor: pointer;
+}
+
+#downBtn {
+  width: 70px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.overlay {
+  width: 1000px;
+  height: 1000px;
+  border-top: 520px solid #fff;
+  border-right: 520px solid transparent;
+  border-bottom: 520px solid #fff;
+  border-left: 520px solid #fff;
+}
